@@ -231,6 +231,7 @@
 		qcom,bms-psy-name = "bms";
 		qcom,chg-inhibit-disabled;	
 		qcom,chg-vadc = <&pm8937_vadc>;
+		qcom,fastchg-current-max-ma = <2000>;  // ← TAMBAHKAN INI
 		qcom,iterm-ma = <150>;
 		status = "ok";
 	};
