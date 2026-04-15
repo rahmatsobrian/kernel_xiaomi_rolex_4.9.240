@@ -93,7 +93,7 @@ curl -s -X POST "https://api.telegram.org/bot${TG_BOT_TOKEN}/sendMessage" \
 }
 
 send_telegram_log() {
-    LOG_FILE="$ROOTDIR/logs/build.txt"
+    LOG_FILE="$ROOTDIR/logs/build.log"
 
     [ ! -f "$LOG_FILE" ] && return
 
@@ -121,7 +121,6 @@ build_kernel() {
         CROSS_COMPILE_ARM32=$TC32 \
         CROSS_COMPILE_COMPAT=$TC32 || {
         send_telegram_error
-        send_telegram_log
         exit 1
     }
 
@@ -150,7 +149,6 @@ pack_kernel() {
         IMG_USED="Image.gz"
     else
         send_telegram_error
-        send_telegram_log
         exit 1
     fi
 
