@@ -28,7 +28,7 @@ TIME_TITLE=$(TZ=Asia/Jakarta date +"%H%M%S")
 BUILD_DATETIME=$(TZ=Asia/Jakarta date +"%d %B %Y")
 
 # ================= TELEGRAM =================
-TG_BOT_TOKEN="7443002324:AAFpDcG3_9L0Jhy4v98RCBqu2pGfznBCiDM"
+TG_BOT_TOKEN="8775586820:AAG3-iQrfWxQ_DB5Bygn7r1X--6VK39xBXY"
 TG_CHAT_ID="-1003520316735"
 
 # ================= GLOBAL =================
