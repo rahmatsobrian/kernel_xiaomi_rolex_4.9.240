@@ -20,7 +20,7 @@ jobs:
       - name: Set Swap Space
         uses: pierotofy/set-swap-space@master
         with:
-          swap-size-gb: 5
+          swap-size-gb: 2
 
       - name: Install Packages
         run: |
@@ -35,8 +35,8 @@ jobs:
 
       - name: Setup KernelSU (Legacy)
         run: |
-         curl -LSs "https://raw.githubusercontent.com/rahmatsobrian/RahmatSU/master/kernel/setup.sh" | bash
-         
+         curl -LSs "https://raw.githubusercontent.com/backslashxx/KernelSU/master/kernel/setup.sh" | bash -s v3.3.1
+
       - name: Start Build (with log)
         run: |
           mkdir -p logs
