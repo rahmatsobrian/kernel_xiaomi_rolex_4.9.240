@@ -19,7 +19,7 @@ TC64="aarch64-linux-gnu-"
 TC32="arm-linux-gnueabi-"
 
 # ================= INFO =================
-KERNEL_NAME="ReLIFE"
+KERNEL_NAME="Yoru"
 DEVICE="rolex"
 
 # ================= DATE (WIB) =================
